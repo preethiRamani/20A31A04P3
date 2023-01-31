@@ -1,0 +1,152 @@
+1)a,b,c=10,20,30
+print(b,c,a)
+out put===20 30 10
+#same line with spaces will be printed.
+
+2)a,b,c=10,20,30
+print(b,c,a,sep='*')
+o/p===20*30*10
+#sep--means seperated by that identifier the numbers.
+
+3)print('9','12','2016',sep='-')
+o/p===9-12-2016
+#directly we can call the values.
+
+4)apple=100
+banana=200
+pineapple=300
+print(apple)
+print(banana)
+print(pineapple)
+o/p===100
+      200
+      300
+#if we want to print values side by side then we r uring end=' ' then value will be concatenate on the same line.
+
+5)apple=100
+banana=200
+pineapple=300
+print(apple,end=' ')
+print(banana,end=' ')
+print(pineapple)
+o/p===100 200 300
+
+6)split() method is used for getting multiple inputs from user.
+syntax---input().split(seperator,maxsplit)
+
+x,y,z=input("enter a three value :").split()
+print("total no of students:",x)
+print("no of boys is:",y)
+print("no of girls is:",z)
+o/p===enter a three value :100 200 300
+total no of students:100
+no of boys is:200
+no of girls is:300
+
+7)each conditional statms are ended with colon which contains own void spaces.it follows the indetentation.
+email="preethiramani99@gmail.com"
+pwd=12345
+cemail=input("enter the mail:")
+cpwd=int(input("enter the pwd:"))
+if(email==cemail and pwd==cpwd):
+  print("login successfully")
+else:
+  print("login failed")
+
+o/p===enter the mail:preethiramani99@gmail.com
+enter the pwd:12345
+login successfully.
+o/p1===enter the mail:preethiramani@gamil.com
+enter the pwd:12345
+login failed.
+
+8)a=5                       a=5
+b=5.0                       b=True         #True means 1 and False means 0
+if(a==b):                   if(1==b):
+ print("yes")                 print("yes")
+else:                       else:
+ print("no")                  print("no")
+o/p===yes                   o/p--yes
+#a=5.3 then
+o/p2===no
+
+9)x=int(input("enter the value:"))
+if(x%7==0):
+   print("divisible")
+else:
+   print("not divisible")
+o/p--enter the x value:21
+divisible.
+
+10)
+email="preethiramani99@gmail.com"
+pwd=12345
+cemail=input("enter the mail:")
+cpwd=int(input("enter the pwd:"))
+if(email==cemail and pwd==cpwd):
+  print("login successfully")
+elif(email!=cemail and pwd==cpwd):
+  print("login failed due to mail")
+elif(email==cemail and pwd!=cpwd):
+  print(login failed due to pwd)
+elif(email!=cemail and pwd!=cpwd):
+  print("login failed due to pwd and mail")
+
+o/p--enter the mail=preethiramani99@gmail.com
+     enter the pwd=12345
+     login successfully
+o/p1--enter the mail=preethi@gamail.com    2#preethiramani99@gmail.com
+      enter the pwd=12345                  #123
+      login failed due to mail.            #login failed due to pwd.
+
+11)
+email="preethiramani99@gmail.com"
+pwd=12345
+otp=234
+cemail=input("enter the mail:")
+cpwd=int(input("enter the pwd:"))
+if(email==cemail and pwd==cpwd):
+  cotp=int(input("enter otp"))
+  if(cotp==otp):
+     print("your order placed successfully")
+  else:
+     print("otp is incorrect")
+elif(email!=cemail and pwd==cpwd):
+  print("login failed due to mail")
+elif(email==cemail and pwd!=cpwd):
+  print(login failed due to pwd)
+elif(email!=cemail and pwd!=cpwd):
+  print("login failed due to pwd and mail")
+ 
+0/p-- enter the mail:preethiramani99@gmail.com
+      enter the pwd=12345                  
+      enter otp:234
+      your order placed successfully.
+
+--->In python there is no increment and decrement operators.
+--->here in is a operator that checks whether the element is avilable or not.o/p is will true otherwise false.
+--->here not in  is also a operator that element is not available in given name.
+eg:a='preethi'
+   print('e' in a)
+   print(a[4])
+
+--->to print the numbers ended withzero
+for i in range(1,151):
+    if(i%10=0):
+       print(i)
+---->
+for i range(1,30,2):
+    if(i%2==1 and i<=5):
+      print(i*5)
+
+--->for i in range(-10,-1,2)
+     print(i)
+or
+for i in range(-10,-1)
+    print(i%2==0)
+    print(i)
+
+
+
+
+  
